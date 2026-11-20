@@ -3,10 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stefano's first website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vincenzo's World :: Original Fine Art &amp; Online Painting Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vincenzo.css">
 </head>
 <body>
- Hello, World! I am Stefano. I am Leraning how to create websites   
+    <div id="wrapper">
+        <header>
+            <div class="logo-box">
+                <a href="index.html">
+                    <img src="logo.png" alt="Vincenzo's World Artist Monogram" width="100" height="100">
+                </a>
+            </div>
+            <div class="header-text">
+                <h1><a href="index.html">VINCENZO'S WORLD</a></h1>
+                <p class="tagline">Original Fine Art &amp; Online Painting Gallery</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Online Gallery</a></li>
+                <li><a href="biography.html">Artist Biography</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Section 1: Featured Exhibition Split -->
+            <section class="featured-exhibition">
+                <div id="featuredhero" class="hero-box">
+                    <img src="featured-painting.jpg" alt="Featured Signature Painting by Vincenzo">
+                </div>
+                <div class="exhibition-details">
+                    <h2>Featured Exhibition</h2>
+                    <p>Explore Vincenzo's latest collection of expressive fine art paintings, blending classical technique with rich color palettes and bold brushwork.</p>
+                    <ul>
+                        <li>Original Oil &amp; Acrylic Works</li>
+                        <li>Worldwide Shipping Available</li>
+                        <li>Custom Commissions Open</li>
+                    </ul>
+                    <a href="gallery.html" class="btn">Explore Online Gallery</a>
+                </div>
+            </section>
+
+            <!-- Section 2: Selected Works 3-Column Grid/Flex -->
+            <section class="selected-works">
+                <h3>Selected Works from the Gallery</h3>
+                <div class="flow">
+                    <article class="artwork-card">
+                        <a href="gallery.html">
+                            <img src="painting1.jpg" alt="Painting One">
+                        </a>
+                        <h4>Painting One</h4>
+                        <p class="medium">Medium: Oil on Canvas, 24"&times;36"</p>
+                        <p><a href="gallery.html" class="text-link">View in Online Gallery &rarr;</a></p>
+                    </article>
+
+                    <article class="artwork-card">
+                        <a href="gallery.html">
+                            <img src="painting2.jpg" alt="Painting Two">
+                        </a>
+                        <h4>Painting Two</h4>
+                        <p class="medium">Medium: Acrylic on Canvas, 18"&times;24"</p>
+                        <p><a href="gallery.html" class="text-link">View in Online Gallery &rarr;</a></p>
+                    </article>
+
+                    <article class="artwork-card">
+                        <a href="gallery.html">
+                            <img src="painting3.jpg" alt="Painting Three">
+                        </a>
+                        <h4>Painting Three</h4>
+                        <p class="medium">Medium: Oil on Wood, 30"&times;40"</p>
+                        <p><a href="gallery.html" class="text-link">View in Online Gallery &rarr;</a></p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Section 3: Meet the Artist Banner -->
+            <section class="artist-bio-box">
+                <div class="bio-text">
+                    <h3>Meet the Artist &mdash; Vincenzo</h3>
+                    <p>Vincenzo is a contemporary fine artist dedicated to capturing emotion, light, and movement on canvas. Drawing inspiration from classical European masters and modern landscapes, each piece reflects years of disciplined studio practice.</p>
+                    <p class="sub-note">Visit the dedicated Artist Biography page for full career details and exhibition history.</p>
+                    <a href="biography.html" class="btn">Read Full Biography</a>
+                </div>
+                <div class="bio-portrait">
+                    <img src="vincenzo-portrait.jpg" alt="Artist Portrait of Vincenzo in Studio">
+                </div>
+            </section>
+
+            <!-- Section 4: Inquiries & Commissions Callout -->
+            <section class="cta-banner">
+                <div class="cta-text">
+                    <h3>Inquiries, Acquisitions &amp; Commissions</h3>
+                    <p>Interested in acquiring a painting or requesting a commission? Visit the Contact page to get in touch.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="contact.html" class="btn">Go to Contact Page</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="index.html">Home</a> |
+                <a href="gallery.html">Online Gallery</a> |
+                <a href="biography.html">Artist Biography</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="footer-contact">
+                Email: <a href="mailto:contact@vincenzosworld.com">contact@vincenzosworld.com</a> | Studio Location: Falls Church, VA
+            </p>
+            <div class="social-links">
+                <a href="#">Instagram</a> &nbsp;
+                <a href="#">Facebook</a> &nbsp;
+                <a href="#">Pinterest</a>
+            </div>
+            <p class="copyright">Copyright &copy; 2026 Vincenzo's World. All Rights Reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>

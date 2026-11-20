@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#wrapper {
+    background-color: #1C1C1C;
+    color: #F5F5F5;
+}
+
+/* Header */
+header {
+    background-color: #141414;
+    border-bottom: 1px solid #3A3A3A;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.logo-box img {
+    display: block;
+    border: 1px solid #555555;
+    background-color: #242424;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Cinzel', Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    font-size: 2em;
+}
+
+header a:link,
+header a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #C9A96E;
+}
+
+.tagline {
+    margin: 0.35em 0 0 0;
+    color: #CCCCCC;
+    font-size: 0.95em;
+    letter-spacing: 0.03em;
+}
+
+/* Navigation */
+nav {
+    background-color: #222222;
+    border-bottom: 1px solid #3A3A3A;
+    font-weight: 600;
+    font-size: 0.95em;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 1px solid #3A3A3A;
+}
+
+nav a {
+    display: block;
+    padding: 0.75em 1em;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #E0E0E0;
+}
+
+nav a:visited {
+    color: #BDBDBD;
+}
+
+nav a:hover,
+nav a.active {
+    color: #C9A96E;
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+    padding: 1.5em;
+    background-color: #1C1C1C;
+}
+
+section {
+    margin-bottom: 2.5em;
+}
+
+h2, h3, h4 {
+    font-family: 'Cinzel', Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 0;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    font-size: 1.55em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 0.75em 0 0.25em 0;
+}
+
+/* Buttons & Links */
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    margin-top: 0.5em;
+}
+
+.btn:hover {
+    background-color: #C9A96E;
+    color: #121212;
+    border-color: #C9A96E;
+}
+
+.text-link:link,
+.text-link:visited {
+    color: #E0E0E0;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+.text-link:hover {
+    color: #C9A96E;
+}
+
+/* Section 1: Featured Exhibition */
+.featured-exhibition {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #3A3A3A;
+}
+
+.hero-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #555555;
+    background-color: #242424;
+}
+
+.exhibition-details ul {
+    padding-left: 1.25em;
+    margin: 1em 0 1.25em 0;
+}
+
+.exhibition-details li {
+    margin-bottom: 0.35em;
+}
+
+/* Section 2: Selected Works */
+.selected-works {
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #3A3A3A;
+}
+
+.flow {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.artwork-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #555555;
+    background-color: #242424;
+}
+
+.artwork-card .medium {
+    margin: 0.25em 0;
+    font-size: 0.88em;
+    color: #CCCCCC;
+}
+
+/* Section 3: Meet the Artist Box */
+.artist-bio-box {
+    border: 1px solid #555555;
+    background-color: #222222;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.sub-note {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #CCCCCC;
+}
+
+.bio-portrait img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    border: 1px solid #555555;
+    background-color: #2A2A2A;
+}
+
+/* Section 4: Inquiries & Commissions Banner */
+.cta-banner {
+    border: 1px solid #555555;
+    background-color: #222222;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 0;
+}
+
+.cta-banner p {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #141414;
+    border-top: 1px solid #3A3A3A;
+    padding: 2em 1.5em;
+    text-align: center;
+    font-size: 0.85em;
+    color: #CCCCCC;
+}
+
+footer a:link,
+footer a:visited {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #C9A96E;
+    text-decoration: underline;
+}
+
+.footer-links,
+.footer-contact,
+.social-links {
+    margin-bottom: 0.75em;
+}
+
+.copyright {
+    margin: 1em 0 0 0;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Medium Layout Media Query (600px+) */
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        text-align: left;
+        padding: 1.5em 2em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav li {
+        border-bottom: none;
+        border-right: 1px solid #444444;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav a {
+        padding: 0.75em 1.5em;
+    }
+
+    .flow {
+        flex-direction: row;
+    }
+
+    .artwork-card {
+        flex: 1;
+    }
+
+    .artist-bio-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bio-text {
+        flex: 2;
+    }
+
+    .bio-portrait {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cta-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Large Grid Layout Media Query (1024px+) */
+@media (min-width: 1024px) {
+    #wrapper {
+        width: 80%;
+        max-width: 1200px;
+        margin: 1.5em auto;
+        border: 1px solid #3A3A3A;
+        box-shadow: 4px 4px 12px #000000;
+    }
+
+    main {
+        padding: 2em 2.5em;
+    }
+
+    @supports (display: grid) {
+        .featured-exhibition {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 2em;
+            align-items: center;
+        }
+    }
+}
